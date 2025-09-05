@@ -1,12 +1,16 @@
-# React + Vite
+1. React Router 설치
+npm install react-router-dom
+특정 버전 설치는 뒤에 @버전숫자 로 치면 된다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+이미 package.json에 다운되어있는 파일을 받았을 경우
+npm install 만 치면 된다.
 
-Currently, two official plugins are available:
+2. Router 컴포넌트 생성
+경로는 개발자 취향껏
+/src/routes/Router.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. mail.jsx에 App 컴포넌트 대신 Router 컴포넌트  변경
 
-## Expanding the ESLint configuration
+4. 라우터로 관리하고 싶은 컴포넌트를 만든다.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Router 컴포넌트의 Router 객체 정의를 HTML 구조에 맞게 설정
